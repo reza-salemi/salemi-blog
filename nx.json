@@ -49,6 +49,11 @@
         "style": "tailwind",
         "linter": "eslint"
       }
+    },
+    "@nx/react": {
+      "library": {
+        "unitTestRunner": "jest"
+      }
     }
   },
   "nxCloudAccessToken": "NmY1NDdhOTMtMDY3OS00MWVjLTgwYzEtODE0Yzc2ZmE0MTBmfHJlYWQtd3JpdGU="

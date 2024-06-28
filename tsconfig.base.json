@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@salemi-blog/libs": ["libs/shared/src/index.ts"],
+      "@salemi-blog/libs/server": ["libs/shared/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
