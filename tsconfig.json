@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@salemi-blog/shared": ["libs/shared/src/index.ts"],
+      "@salemi-blog/shared/*": ["libs/shared/src/*"]
+    }
+  }
+}

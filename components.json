@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tailwind": {
+    "config": "apps/dashboard/tailwind.config.js",
+    "css": "apps/dashboard/src/app/global.css",
+    "baseColor": "stone",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "@salemi-blog/shared/components",
+    "utils": "@salemi-blog/shared/utils"
+  }
+}
