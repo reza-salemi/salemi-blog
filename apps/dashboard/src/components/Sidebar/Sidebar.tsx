@@ -52,8 +52,8 @@ const menuList = [
         icon: <IconArticle />,
       },
       {
-        link: '/categories',
-        text: 'Categories',
+        link: '/category',
+        text: 'Category',
         icon: <IconCategory />,
       },
       {
