@@ -9,7 +9,7 @@
     "cssVariables": true
   },
   "aliases": {
-    "components": "@salemi-blog/shared/components",
+    "ui": "@salemi-blog/shared/ui",
     "utils": "@salemi-blog/shared/utils"
   }
 }

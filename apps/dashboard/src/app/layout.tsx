@@ -1,4 +1,6 @@
-import { Sidebar } from '../components';
+import { Header, SideNav } from '../components';
+import { PageWrapper } from '../components/PageWrapper';
+import { ThemeProvider } from '../providers';
 import './global.css';
 
 export const metadata = {
@@ -13,10 +15,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex items-start justify-between">
-        <Sidebar />
-        <main className="w-full h-full">{children}</main>
-      </body>
+      <ThemeProvider>
+        <body className="min-h-screen grid grid-rows-[80px_1fr_auto] dark:bg-base-100 dark:text-base-content">
+          <Header />
+          <div className="flex">
+            <SideNav />
+            <main className="flex-1">
+              <PageWrapper>{children}</PageWrapper>
+            </main>
+          </div>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
