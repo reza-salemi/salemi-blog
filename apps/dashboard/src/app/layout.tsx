@@ -16,14 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className="min-h-screen grid grid-rows-[80px_1fr_auto] dark:bg-base-100 dark:text-base-content">
+        <body className="min-h-screen grid grid-rows-[80px_1fr] dark:bg-base-100 dark:text-base-content">
           <Header />
-          <div className="flex">
+          <main className="flex">
             <SideNav />
-            <main className="flex-1">
-              <PageWrapper>{children}</PageWrapper>
-            </main>
-          </div>
+            <PageWrapper>{children}</PageWrapper>
+          </main>
         </body>
       </ThemeProvider>
     </html>
