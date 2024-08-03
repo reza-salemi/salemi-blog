@@ -11,7 +11,7 @@ type IProps = {
   icon?: JSX.Element;
   path: string;
   active: boolean;
-  isSidebarExpanded: boolean;
+  isSidebarExpanded: boolean | null;
 };
 
 export const SideNavItem: React.FC<IProps> = ({

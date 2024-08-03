@@ -1,5 +1,4 @@
 import { Header, SideNav } from '../components';
-import { PageWrapper } from '../components/PageWrapper';
 import { ThemeProvider } from '../providers';
 import './global.css';
 
@@ -16,12 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className="min-h-screen grid grid-rows-[80px_1fr] dark:bg-base-100 dark:text-base-content">
-          <Header />
-          <main className="flex">
-            <SideNav />
-            <PageWrapper>{children}</PageWrapper>
-          </main>
+        <body className="flex min-h-screen dark:bg-base-100 dark:text-base-content">
+          <SideNav />
+          <div className="flex-1">
+            <Header />
+            <main>{children}</main>
+          </div>
         </body>
       </ThemeProvider>
     </html>

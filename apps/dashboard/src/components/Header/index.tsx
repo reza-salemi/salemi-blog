@@ -23,7 +23,7 @@ export const Header = () => {
         }
       )}
     >
-      <div className="flex h-[48px] items-center justify-between px-4">
+      <div className="flex h-[80px] items-center justify-between px-4">
         <div className="flex items-center space-x-4">
           <Link
             href="/"
