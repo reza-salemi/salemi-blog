@@ -19,7 +19,7 @@ export default function RootLayout({
           <SideNav />
           <div className="flex-1">
             <Header />
-            <main>{children}</main>
+            <main className="p-4">{children}</main>
           </div>
         </body>
       </ThemeProvider>

@@ -16,7 +16,7 @@ export const Header = () => {
   return (
     <header
       className={cn(
-        `sticky inset-x-0 top-0 z-30 w-full transition-all border-b border-gray-200`,
+        `sticky inset-x-0 top-0 z-[10] w-full transition-all border-b border-gray-200`,
         {
           'border-b border-gray-200 bg-red-500 backdrop-blur-lg': isScrolled,
           'border-b border-gray-200 bg-red-200': !isScrolled && selectedLayout,

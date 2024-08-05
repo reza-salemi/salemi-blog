@@ -46,7 +46,7 @@ export const SideNav = () => {
     >
       <div className="flex flex-col w-full overflow-y-auto break-words px-4">
         {/* Top */}
-        <div className="mt-4 relative pb-2">
+        <div className="relative mt-4 pb-2">
           <div className="flex flex-col space-y-1">
             {navItems.map((item) => {
               if (item.position !== 'bottom') {

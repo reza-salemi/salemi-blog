@@ -6,6 +6,7 @@ import {
   IconSettings,
   IconBell,
   IconHome,
+  IconCategory,
 } from '@tabler/icons-react';
 
 import { SideNavItem } from './types';
@@ -13,8 +14,8 @@ import { SideNavItem } from './types';
 export const NavItems = (): SideNavItem[] => {
   const pathname = usePathname();
 
-  function isNavItemActive(pathname: string, nav: string) {
-    return pathname.includes(nav);
+  function isNavItemActive(pathname: string, slug: string) {
+    return pathname.includes(slug);
   }
 
   return [
@@ -60,8 +61,8 @@ export const NavItems = (): SideNavItem[] => {
     {
       title: 'Category',
       path: '/category',
-      icon: <IconBell size={20} />,
-      active: isNavItemActive(pathname, '/notifications'),
+      icon: <IconCategory size={20} />,
+      active: isNavItemActive(pathname, '/category'),
       position: 'top',
     },
     {
